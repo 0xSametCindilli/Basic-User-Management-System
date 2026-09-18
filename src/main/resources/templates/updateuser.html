@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Update User</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 25px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+            padding: 40px;
+            width: 400px;
+            max-width: 90%;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            margin: 0 0 25px 0;
+            font-size: 24px;
+            color: #333333;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        form input[type="text"],
+        form input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        form input[type="text"]:focus,
+        form input[type="email"]:focus {
+            border-color: #4a90e2;
+            box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
+        }
+
+        form input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: #f5a623;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        form input[type="submit"]:hover {
+            background: #d98f12;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h3>Update User</h3>
+        <form th:action="@{/saveuser}" method="POST" th:object="${user}">
+            <div class="id"><input th:field="*{id}" type="hidden" placeholder="Id" required ></div>
+            <div class="firstname"><input th:field="*{firstName}" type="text" placeholder="First Name" required ></div>
+            <div class="lastname"><input th:field="*{lastName}" type="text" placeholder="Last Name" required></div>
+            <div class="email"><input th:field="*{email}" type="email" placeholder="example@mail.com" required></div>
+            <div class="submit"><input type="submit" value="Update User"></div>
+        </form>
+
+    </div>
+</body>
+</html>
