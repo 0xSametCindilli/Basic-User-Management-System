@@ -86,9 +86,7 @@ src/main/resources/application.properties               # App and database confi
 
 ## Roadmap
 
-- [ ] Input validation
-- [ ] Search and pagination
-- [ ] Unit and integration tests
+- [ ] Exception handling
 
 ## License
 
