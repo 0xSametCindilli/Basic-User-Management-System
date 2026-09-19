@@ -4,6 +4,12 @@
 
 A basic user management web application built with **Spring Boot**, **Spring MVC**, **Spring Data JPA**, **Thymeleaf** and **MySQL**. I built it to learn CRUD operations and layered architecture in Java backend development.
 
+
+
+https://github.com/user-attachments/assets/6c178098-df60-480c-9bec-4d9f0ad7aeb0
+
+
+
 ## Features
 
 - Add new users (first name, last name, email)
