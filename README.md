@@ -53,7 +53,7 @@ The rest of the connection settings are in `src/main/resources/application.prope
 ### Run locally
 
 ```bash
-git clone https://github.com/KULLANICI_ADIN/Basic-User-Management-System.git
+git clone https://github.com/0xSametCindilli/Basic-User-Management-System.git
 cd Basic-User-Management-System
 ./mvnw spring-boot:run
 ```
