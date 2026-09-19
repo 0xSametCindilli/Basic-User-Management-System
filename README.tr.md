@@ -53,7 +53,7 @@ Bağlantının geri kalan ayarları `src/main/resources/application.properties` 
 ### Yerel makinede çalıştırma
 
 ```bash
-git clone https://github.com/KULLANICI_ADIN/Basic-User-Management-System.git
+git clone https://github.com/0xSametCindilli/Basic-User-Management-System.git
 cd Basic-User-Management-System
 ./mvnw spring-boot:run
 ```
