@@ -80,9 +80,7 @@ src/main/resources/application.properties               # Uygulama ve veritaban�
 
 ## Yapılacaklar
 
-- [ ] Girdi doğrulama
-- [ ] Arama ve sayfalama
-- [ ] Birim ve entegrasyon testleri
+- [ ] Hata yakalama
 
 ## Lisans
 
